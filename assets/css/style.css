@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+.gallery img {
+  width: 100px;
+}
+
+.profile div {
+  text-align: center !important;
+}
+.display-none {
+  display: none;
+}
+.display-block {
+  display: block;
+}
+
+/* Define the animation */
+@keyframes color-change {
+  0% {
+    color: red;
+  }
+  25% {
+    color: blue;
+  }
+  50% {
+    color: green;
+  }
+  75% {
+    color: orange;
+  }
+  100% {
+    color: purple;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(20%);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateX(-32%);
+    opacity: 0.4;
+  }
+}
+
+.animated-text {
+  animation: color-change 5s linear infinite, slide-in 20s linear infinite;
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+}

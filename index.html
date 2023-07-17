@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form App</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+
+
+    <div class="main mt-5">
+
+      <div class="div">
+        <h1 class="animated-text color-text">Made by Kawsar Ahamed <sub> ( MERN Stack )</sub></h1>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8">
+            <div class="card shadow-lg">
+              <div class="card-header">
+                <div class="card-title text-center">
+                  <h1>Simple Form</h1>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="message"></div>
+                <form action="" id="userform">
+                  <div class="div d-flex justify-content-between">
+                    <input
+                      type="text"
+                      placeholder="First Name"
+                      class="form-control me-2"
+                      name="firstname"
+                      id="first-name"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Last Name"
+                      class="form-control ms-2"
+                      name="lastname"
+                      id="last-name"
+                    />
+                  </div>
+
+                  <input
+                    type="text"
+                    placeholder="Type Your E-mail"
+                    class="form-control mt-4"
+                    name="email"
+                    id="email"
+                  />
+
+                  <input
+                    type="text"
+                    placeholder="Type Your Mobile No"
+                    class="form-control mt-4"
+                    name="mobile"
+                    id="mobile"
+                  />
+                  <div class="div d-flex justify-content-between mt-4">
+                    <input
+                      type="text"
+                      placeholder="Type Your City Name"
+                      class="form-control me-2"
+                      name="cityname"
+                      id="city-name"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Type Your Age"
+                      class="form-control ms-2"
+                      name="age"
+                      id="age"
+                    />
+                  </div>
+
+                  <div class="d-flex justify-content-around form-control mt-3">
+                    <div class="form-check">
+                      <input
+                        type="radio"
+                        name="gender"
+                        id="male"
+                        value="male"
+                        class="mt-1"
+                      />
+                      <label for="gender">Male</label> <br />
+                      <input
+                        type="radio"
+                        name="gender"
+                        id="female"
+                        value="female"
+                        class="mt-1"
+                      />
+                      <label for="gender">Female</label> <br />
+
+                      <input
+                        type="radio"
+                        name="gender"
+                        id="third-gender"
+                        value="third-gender"
+                        class="mt-1"
+                      />
+                      <label for="gender">Third gender</label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        name="skill"
+                        id="mern"
+                        value="mern-stack"
+                        class="mt-1"
+                      />
+                      <label for="skill">MERN Stack</label> <br />
+                      <input
+                        type="checkbox"
+                        name="skill"
+                        id="ios"
+                        value="ios"
+                        class="mt-1"
+                      />
+                      <label for="skill">IOS Devs</label> <br />
+
+                      <input
+                        type="checkbox"
+                        name="skill"
+                        id="php"
+                        value="php"
+                        class="mt-1"
+                      />
+                      <label for="skill">PHP Devs</label>
+                    </div>
+                  </div>
+
+                  <div class="profile mt-4 form-control">
+                    <label for=""
+                      >Upload Your Profile Image (less than 1MB)</label
+                    ><br />
+                    <input
+                      type="file"
+                      placeholder="File"
+                      class="mt-1 profile-image"
+                      accept=".jpg, .jpeg, .png" name="profile"
+                    />
+                    <br />
+                    <div
+                      class="d-flex align-items-start justify-content-center"
+                    >
+                      <img class="mt-2 w-25 user-photopreview" src="" alt="" />
+
+                      <p class="btn-close my-btn display-none"></p>
+                    </div>
+                  </div>
+                  <div class="gallery mt-4 form-control">
+                    <label for=""
+                      >Upload Your Gallery Image (maximum 5 photos)</label
+                    ><br />
+                    <input
+                      type="file"
+                      multiple
+                      placeholder="File"
+                      class="mt-1"
+                      name="gallery"
+                    />
+                    <br />
+                    <div
+                      class="d-flex justify-content-center mt-2 gallery-preview"
+                    >
+                    
+                  </div>
+
+                  <textarea
+                    class="form-control mt-4 mb-4"
+                    rows="5"
+                    id="textarea"
+                    placeholder="Type Your Message" name="message"
+                  ></textarea>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="invalidCheck"
+                      required
+                    />
+                    <label class="form-check-label" for="invalidCheck">
+                      Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                      You must agree before submitting.
+                    </div>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary mt-4 me-2">
+                    Submit
+                  </button>
+                  <button type="reset" class="btn btn-danger mt-4 ms-2">
+                    Reset
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2"></div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/funtions.js"></script>
+  </body>
+</html>
